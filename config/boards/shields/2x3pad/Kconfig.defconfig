@@ -1,0 +1,6 @@
+if SHIELD_2X3PAD
+
+config ZMK_KEYBOARD_NAME
+    default "2x3Pad"
+
+endif

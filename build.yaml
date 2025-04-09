@@ -20,4 +20,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: boardsource3x4
+    shield: 2x3pad
