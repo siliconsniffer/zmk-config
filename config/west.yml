@@ -2,10 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: zmk-keyboard-2x3pad
+      url-base: https://github.com/siliconsniffer
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-keyboard-2x3pad
+      remote: zmk-keyboard-2x3pad
+      revision: master
+
   self:
     path: config
