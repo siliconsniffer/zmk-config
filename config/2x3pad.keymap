@@ -17,14 +17,21 @@
         default_layer {
             bindings = <
                 &kp A     &kp B     &kp C
-                &kp D     &mo 1     &kp F
+                &kp D     &lt 1 E     &lt 2 F
             >;
         };
 
-        fn_layer {
+        layer_1 {
             bindings = <
                 &bt BT_CLR    &bt BT_PRV    &bt BT_NXT
-                &out OUT_TOG         &trans         &studio_unlock
+                &out OUT_TOG  &trans        &mt &bootloader &studio_unlock
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+                &none &none &studio_unlock
+                &none &trans &bootloader
             >;
         };
     };
