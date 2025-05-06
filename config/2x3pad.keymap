@@ -15,24 +15,35 @@
 
 
         default_layer {
+            label = "Default";
             bindings = <
-                &kp A     &kp B     &kp C
-                &kp D     &lt 1 E     &lt 2 F
+                &lt 1 E     &kp W     &kp E
+                &kp A       &kp S     &kp D
             >;
         };
 
         layer_1 {
+            label = "Bluetooth";
             bindings = <
-                &bt BT_CLR    &bt BT_PRV    &bt BT_NXT
-                &out OUT_TOG  &trans        &mt &bootloader &studio_unlock
+                &trans    &bt BT_PRV    &bt BT_NXT
+                &out OUT_TOG  &bt BT_CLR        &tog 2
             >;
         };
 
         layer_2 {
+            label = "System";
             bindings = <
                 &none &none &studio_unlock
                 &none &trans &bootloader
             >;
+        };
+
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
         };
     };
 };
