@@ -33,7 +33,7 @@
         default_layer {
             label = "Default";
             bindings = <
-                &lt 1 E     &kp W     &kp E
+                &lt 3 E     &kp W     &kp E
                 &kp A       &kp S     &kp D
             >;
         };
@@ -50,14 +50,14 @@
             label = "Bluetooth";
             bindings = <
                 &trans        &bt BT_PRV    &bt BT_NXT
-                &out OUT_TOG  &bt BT_CLR    &mo 3
+                &out OUT_TOG  &bt BT_CLR    &none
             >;
         };
 
         layer_3 {
             label = "System";
             bindings = <
-                &none &bootloader &studio_unlock
+                &trans &bootloader &studio_unlock
                 &none &trans      &none
             >;
         };
