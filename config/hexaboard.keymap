@@ -55,7 +55,7 @@
         arrows_layer {
             display-name = "Arrows";
             bindings = <
-                &lt 2 ESC  &kp UP     &kp RET
+                &lt 3 ESC  &kp UP     &kp RET
                 &kp LEFT   &kp SPACE  &kp RIGHT
             >;
         };
