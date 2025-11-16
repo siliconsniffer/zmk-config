@@ -25,3 +25,9 @@ include:
     shield: hexaboard
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: hexaboard_xiao_ble
+  - board: seeeduino_xiao_rp2040
+    shield: hexaboard
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: seeeduino_xiao_rp2040
