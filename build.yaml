@@ -24,11 +24,11 @@ include:
     shield: hexaboard
   - board: seeeduino_xiao_ble
     shield: hexaboard
-    cmake-args: -DCONFIG_ZMK_BLE=n -DKEYMAP_FILE=hexaboard_wired.keymap
+    cmake-args: -DCONFIG_ZMK_BLE=n -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
     artifact-name: xiaoble_without_ble
   - board: seeeduino_xiao_rp2040
     shield: hexaboard
-    cmake-args: -DKEYMAP_FILE=hexaboard_wired.keymap
+    cmake-args: -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
 
 # include:
 #   - board: seeeduino_xiao_ble
