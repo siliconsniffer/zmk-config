@@ -18,16 +18,28 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+
 include:
   - board: seeeduino_xiao_ble
-    shield: settings_reset
+    shield: hexaboard
   - board: seeeduino_xiao_ble
     shield: hexaboard
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: hexaboard_xiao_ble
+    cmake-args: -DCONFIG_ZMK_BLE=n -DKEYMAP_FILE=./hexaboard.keymap
+    artifact-name: xiaoble_without_ble
   - board: seeeduino_xiao_rp2040
     shield: hexaboard
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: seeeduino_xiao_rp2040
+    cmake-args: -DKEYMAP_FILE=../../config/hexaboard.keymap
+
+# include:
+#   - board: seeeduino_xiao_ble
+#     shield: settings_reset
+#   - board: seeeduino_xiao_ble
+#     shield: hexaboard
+#     snippet: studio-rpc-usb-uart
+#     cmake-args: -DCONFIG_ZMK_STUDIO=y
+#     artifact-name: hexaboard_xiao_ble
+#   - board: seeeduino_xiao_rp2040
+#     shield: hexaboard
+#     snippet: studio-rpc-usb-uart
+#     cmake-args: -DCONFIG_ZMK_STUDIO=y
+#     artifact-name: seeeduino_xiao_rp2040
