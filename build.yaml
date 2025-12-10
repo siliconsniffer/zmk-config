@@ -20,13 +20,13 @@
 ---
 
 include:
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: hexaboard
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: hexaboard
     cmake-args: -DCONFIG_ZMK_BLE=n -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
     artifact-name: xiaoble_without_ble
-  - board: seeeduino_xiao_rp2040
+  - board: xiao_rp2040
     shield: hexaboard
     cmake-args: -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
 
