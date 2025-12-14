@@ -22,13 +22,17 @@
 include:
   - board: xiao_ble
     shield: hexaboard
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: xiao_ble
     shield: hexaboard
-    cmake-args: -DCONFIG_ZMK_BLE=n -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_BLE=n -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
     artifact-name: xiaoble_without_ble
   - board: xiao_rp2040
     shield: hexaboard
-    cmake-args: -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DKEYMAP_FILE=../../config/hexaboard_wired.keymap
 
 # include:
 #   - board: seeeduino_xiao_ble
